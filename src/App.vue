@@ -1,22 +1,28 @@
+<!--
+ * @Autor: lvdy
+ * @Date: 2023-09-26 09:15:15
+ * @LastEditors: lvdy
+ * @LastEditTime: 2023-10-25 17:58:40
+ * @Description: 
+-->
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <router-view />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
   }
 }
 </script>
 
-<style>
+<style scoped>
+
+img {
+  transform: rotate(180deg);
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
